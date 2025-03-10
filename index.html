@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <label for="user_type">Usuário:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="professor" name="user_type" value="professor" required>
+                        <label for="professor"><i class="fas fa-chalkboard-teacher"></i> Professor</label>
+                        <input type="radio" id="aluno" name="user_type" value="aluno" required>
+                        <label for="aluno"><i class="fas fa-user-graduate"></i> Aluno</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="username">Login:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
