@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logout-button i {
+    margin-right: 5px;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item i {
+    margin-right: 5px;
+}
+
+.menu-item:hover {
+    background-color: #0056b3;
+}
+
+.menu-item.active {
+    background-color: #0056b3;
+}
+
+.content {
+    text-align: left;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+ul.aluno-lista, ul.atividades-lista {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul.aluno-lista li, ul.atividades-lista li {
+    margin: 10px 0;
+}
+
+ul.aluno-lista a, ul.atividades-lista a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul.aluno-lista a:hover, ul.atividades-lista a:hover {
+    text-decoration: underline;
+}
+
+.back-button, .launch-button, .edit-button, .delete-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.back-button i, .launch-button i, .edit-button i, .delete-button i {
+    margin-right: 5px;
+}
+
+.back-button:hover, .launch-button:hover, .edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    margin-top: 15px;
+    color: red;
+}
+
+.atividade-frame {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.atividade-item {
+    display: flex;
+    align-items: center;
+}
+
+.atividade-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.atividade-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.atividade-info .atividade-nome {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.atividade-info .dia {
+    font-size: 14px;
+    color: #777;
+}
+
+.atividade-info .data {
+    font-size: 14px;
+    color: #777;
+}
+
+.atividade-info .tipo {
+    font-size: 14px;
+    color: #555;
+}
+
+.atividade-detalhe-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-item {
+    margin-bottom: 20px;
+}
+
+.responsive-video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
