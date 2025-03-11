@@ -29,6 +29,7 @@ body {
 .logo {
     width: 100px;
     height: auto;
+    max-width: 100%;
 }
 
 .logout-button {
@@ -54,10 +55,11 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .menu-item {
-    background-color: #007bff;
+    background-color: #28a745; /* Verde da educação física */
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -65,6 +67,7 @@ body {
     border-radius: 5px;
     display: flex;
     align-items: center;
+    margin: 5px;
 }
 
 .menu-item i {
@@ -72,11 +75,11 @@ body {
 }
 
 .menu-item:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 .menu-item.active {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 .content {
@@ -110,10 +113,10 @@ ul.aluno-lista a:hover, ul.atividades-lista a:hover {
     text-decoration: underline;
 }
 
-.back-button, .launch-button, .edit-button, .delete-button {
+.back-button, .launch-button, .edit-button, .delete-button, .save-button, .treino-button {
     display: inline-block;
     margin-top: 20px;
-    background-color: #007bff;
+    background-color: #28a745; /* Verde da educação física */
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -123,12 +126,12 @@ ul.aluno-lista a:hover, ul.atividades-lista a:hover {
     align-items: center;
 }
 
-.back-button i, .launch-button i, .edit-button i, .delete-button i {
+.back-button i, .launch-button i, .edit-button i, .delete-button i, .save-button i, .treino-button i {
     margin-right: 5px;
 }
 
-.back-button:hover, .launch-button:hover, .edit-button:hover {
-    background-color: #0056b3;
+.back-button:hover, .launch-button:hover, .edit-button:hover, .save-button:hover, .treino-button:hover {
+    background-color: #218838;
 }
 
 .delete-button {
@@ -147,6 +150,7 @@ ul.aluno-lista a:hover, ul.atividades-lista a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-top: 50px;
 }
 
 .login-header {
@@ -175,7 +179,7 @@ input, select {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #28a745; /* Verde da educação física */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -184,7 +188,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 #error-message {
@@ -206,8 +210,8 @@ button:hover {
 }
 
 .atividade-item img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
     border-radius: 5px;
     object-fit: cover;
@@ -219,23 +223,19 @@ button:hover {
 }
 
 .atividade-info .atividade-nome {
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.atividade-info .dia-da-semana {
+    font-size: 24px;
     font-weight: bold;
-}
-
-.atividade-info .dia {
-    font-size: 14px;
-    color: #777;
-}
-
-.atividade-info .data {
-    font-size: 14px;
-    color: #777;
-}
-
-.atividade-info .tipo {
-    font-size: 14px;
     color: #555;
+}
+
+.atividade-info .data, .atividade-info .tipo {
+    font-size: 14px;
+    color: #777;
 }
 
 .atividade-detalhe-img {
@@ -260,4 +260,146 @@ button:hover {
     width: 100%;
     max-width: 400px;
     height: auto;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: #28a745; /* Verde da educação física */
+    color: #fff;
+    border-color: #28a745;
+}
+
+.radio-group i {
+    margin-right: 5px;
+}
+
+.modo-treino {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.treino-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.treino-detalhes p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.treino-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.contador-serie {
+    margin: 20px 0;
+}
+
+.contador-button {
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contador-button:hover {
+    background-color: #218838;
+}
+
+.treino-footer {
+    margin-top: 20px;
+}
+
+.treino-footer p {
+    font-size: 18px;
+}
+
+.fullscreen-button {
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.fullscreen-button i {
+    margin: 0;
+}
+
+.fullscreen-button:hover {
+    background-color: #218838;
+}
+
+.camera-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.camera-button {
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.camera-button:disabled {
+    background-color: #6c757d;
+}
+
+.camera-button i {
+    margin-right: 5px;
+}
+
+.camera-button:hover:not(:disabled) {
+    background-color: #218838;
 }
